@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp48
+{
+    class Program
+    {
+        public static void Main(string[] args)
+        {
+            double c, f = 0;
+            Console.WriteLine("Temperatura do tempo hoje: ");
+            c = double.Parse(Console.ReadLine());
+            G(c, f);
+        }
+        public static void G(double c, double f)
+        {
+            f = (9 * c + 160) / 5;
+            Console.WriteLine("A conversão da temperatura em Celsius Para Fahrenheit é: " + f + "°");
+        }
+
+    }
+}
